@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Financial Management</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="welcome-text">Hello User</h1>
+        <form id="financial-form">
+            <label for="loan-amount">Loan Amount:</label>
+            <input type="number" id="loan-amount" required><br>
+
+            <label for="monthly-income">Monthly Income:</label>
+            <input type="number" id="monthly-income" required><br>
+
+            <label for="expenses">Monthly Expenses:</label>
+            <input type="number" id="expenses" required><br>
+
+            <label for="rent-income">Asset Rents Income:</label>
+            <input type="number" id="rent-income"><br>
+
+            <button type="button" id="calculate-button">Calculate</button>
+        </form>
+
+        <div id="results">
+            <p>Suggested Savings: <span id="savings-result">0</span></p>
+            <p>Suggested Loan Payment: <span id="loan-payment-result">0</span></p>
+            <p>Loan Payoff Duration: <span id="loan-duration-result">N/A</span> months</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
