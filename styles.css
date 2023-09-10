@@ -15,6 +15,15 @@ form label {
     display: block;
     margin-bottom: 10px;
 }
+/* Basic radial gradient */
+.element {
+  background-image: radial-gradient(circle, #ff0000, #0000ff);
+}
+
+/* Radial gradient with specified shape and size */
+.element {
+  background-image: radial-gradient(ellipse at center, #ff0000, #0000ff);
+}
 
 form input {
     width: 100%;
