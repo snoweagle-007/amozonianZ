@@ -3,11 +3,13 @@
 <head>
     <title>Financial Management</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    
 </head>
-<body>
+<body style="background-color: #007BA7;">
     <div class="container">
-        <h1 id="welcome-text">Hello User</h1>
+        <h1 style="color: rgb(82, 81, 82);"> Hey, Jameel !</h1>
         <form id="financial-form">
+            <h2> Time: <span id="clock"></span></h2>
             <label for="loan-amount">Loan Amount:</label>
             <input type="number" id="loan-amount" required><br>
 
@@ -31,5 +33,24 @@
     </div>
 
     <script src="script.js"></script>
+    <script>
+        function updateClock() {
+          const clockElement = document.getElementById('clock');
+          const now = new Date();
+          const hours = now.getHours().toString().padStart(2, '0');
+          const minutes = now.getMinutes().toString().padStart(2, '0');
+          const seconds = now.getSeconds().toString().padStart(2, '0');
+          
+          const timeString = `${hours}:${minutes}:${seconds}`;
+          clockElement.textContent = timeString;
+        }
+    
+        // Update the clock every second
+        setInterval(updateClock, 1000);
+    
+        // Call the function immediately to display the time
+        updateClock();
+      </script>
 </body>
 </html>
+
