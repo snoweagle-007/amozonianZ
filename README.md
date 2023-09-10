@@ -1,4 +1,4 @@
-# AmozonianZ
+# AmozonianZ/ Debt Payer Initial Commit 10-09-2023
 Debt Calculator - Under SnowEagle Corp
 Credits : @SumedKhanz/github.com , @sowmyaizacoder/github.com, @snoweagle-007/github.com, @shashankKanojia/github.com, @svaibhavnoob/github.com
 
